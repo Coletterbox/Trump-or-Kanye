@@ -30,7 +30,8 @@ body {
 .header-container {
   grid-column: 1/9;
   grid-row: 1/2;
-  font-family: "Montserrat Subrayada", sans-serif;
+  font-family: "Mansalva", cursive;
+  /* font-family: "Pacifico", cursive; */
   text-align: center;
   font-size: 3rem;
   margin-top: 2rem;
