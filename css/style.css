@@ -90,7 +90,8 @@ button:hover {
 .trump-img {
   padding: 2rem;
   margin: auto;
-  width: 50%;
+  border: 0.2rem;
+  border-radius: 50%;
 }
 
 .show-quote {
@@ -110,7 +111,7 @@ button:hover {
   flex-direction: column;
   width: 8rem;
   margin: 1rem auto;
- }
+}
 
 .quiz-responses {
   justify-content: space-around;
@@ -155,7 +156,6 @@ img {
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
   font-size: 4rem;
 }
-
 
 @media only screen and (max-width: 1500px) {
   body {
