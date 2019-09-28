@@ -1,6 +1,19 @@
-html {
-  background-color: #d6e2d5;
+:root {
+  --grey0: #7f7f7f;
+  --grey: #c9c9c9;
+  --taupe: #7a5964;
+  --light: #9699ad;
+  --red: #4f1b18;
+  --red2: #631616;
+  --darkred: #420f0f;
+  --purple: #49133c;
+  --darkpurple: #2a1438;
+  --blackish: #1e1e1f;
 }
+
+/* * {
+  background-color: var(--taupe);
+} */
 
 body {
   display: grid;
@@ -11,7 +24,7 @@ body {
   text-align: center;
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
-  background-color: #fffeec;
+  background-color: var(--light);
 }
 
 .header-container {
@@ -25,14 +38,14 @@ body {
 
 header {
   margin: auto;
-  color: #404040;
+  color: var(--blackish);
 }
 
 button {
   cursor: pointer;
-  background-color: #012a36;
-  color: #fffdd0;
-  border: 4px solid #1e5b1e;
+  color: var(--grey);
+  background-color: var(--darkred);
+  border: 4px solid var(--red2);
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.5s;
   outline-color: black;
@@ -47,14 +60,14 @@ button {
 button:hover {
   box-shadow: 0 25px 30px 0 rgba(0, 0, 0, 0.24),
     0 28px 70px 0 rgba(0, 0, 0, 0.19);
-  background-color: #fffdd0;
-  color: #1e5b1e;
+  /* background-color: var(--red2);
+  color: var(--grey); */
 }
 
 .skip-btn,
 .next-btn {
-  background-color: #29274c;
-  border: 4px solid #2d2d99;
+  background-color: var(--darkpurple);
+  border: 4px solid var(--purple);
 }
 
 .next-btn {
@@ -63,8 +76,14 @@ button:hover {
 
 .skip-btn:hover,
 .next-btn:hover {
-  color: #2d2d99;
-  border: 4px solid #2d2d99;
+  background-color: var(--purple);
+  border: 4px solid var(--grey);
+}
+
+.trump-btn:hover,
+.kanye-btn:hover {
+  background-color: var(--red2);
+  border: 4px solid var(--grey);
 }
 
 .quiz-container {
@@ -90,7 +109,8 @@ button:hover {
 .trump-img {
   padding: 2rem;
   margin: auto;
-  width: 50%;
+  border: 0.2rem;
+  border-radius: 50%;
 }
 
 .show-quote {
@@ -99,8 +119,8 @@ button:hover {
   word-wrap: break-word;
   padding: 3rem;
   height: 10rem;
-  border: solid 10px #6b716a;
-  background-color: #fffdd0;
+  border: solid 10px var(--blackish);
+  background-color: var(--grey);
 }
 
 .score-skip-container {
@@ -110,7 +130,7 @@ button:hover {
   flex-direction: column;
   width: 8rem;
   margin: 1rem auto;
- }
+}
 
 .quiz-responses {
   justify-content: space-around;
@@ -147,7 +167,7 @@ img {
 }
 
 .score-container {
-  background-color: #cccbbc;
+  background-color: var(--grey);
   padding: 1rem 2rem;
   border-radius: 10%;
   margin-bottom: 5rem;
@@ -155,7 +175,6 @@ img {
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
   font-size: 4rem;
 }
-
 
 @media only screen and (max-width: 1500px) {
   body {
