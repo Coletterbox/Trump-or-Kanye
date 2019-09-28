@@ -46,7 +46,8 @@ var displayTrump = function() {
         trumpLowerCase.includes("lyin' ted") ||
         trumpLowerCase.includes("http") ||
         trumpLowerCase.includes("fiorina") ||
-        trumpLowerCase.includes("jeb")
+        trumpLowerCase.includes("jeb") ||
+        trumpLowerCase.includes("rick perry")
       ) {
         displayTrump();
       } else {
