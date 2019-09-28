@@ -41,7 +41,12 @@ var displayTrump = function() {
         trumpLowerCase.includes("polls") ||
         trumpLowerCase.includes("brexit") ||
         // trumpLowerCase.includes("maga") ||
-        trumpLowerCase.includes("senator")
+        trumpLowerCase.includes("senator") ||
+        trumpLowerCase.includes("crooked") ||
+        trumpLowerCase.includes("lyin' ted") ||
+        trumpLowerCase.includes("http") ||
+        trumpLowerCase.includes("fiorina") ||
+        trumpLowerCase.includes("jeb")
       ) {
         displayTrump();
       } else {
