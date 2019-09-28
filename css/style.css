@@ -1,3 +1,13 @@
+:root {
+  --grey: #7f7f7f;
+  --taupe: #7a5964;
+  --red: #4f1b18;
+  --darkred: #420f0f;
+  --purple: #49133c;
+  --darkpurple: #2a1438;
+  --blackish: #1e1e1f;
+}
+
 html {
   background-color: #d6e2d5;
 }
