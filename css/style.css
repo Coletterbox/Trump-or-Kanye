@@ -30,7 +30,8 @@ body {
 .header-container {
   grid-column: 1/9;
   grid-row: 1/2;
-  font-family: "Montserrat Subrayada", sans-serif;
+  font-family: "Mansalva", cursive;
+  /* font-family: "Pacifico", cursive; */
   text-align: center;
   font-size: 3rem;
   margin-top: 2rem;
@@ -210,8 +211,13 @@ img {
 }
 
 @media only screen and (max-width: 775px) {
+  header {
+    font-size: 2rem;
+  }
+
   .show-quote {
     width: 28rem;
+    padding: 2rem;
   }
 
   .quiz-responses {
@@ -219,8 +225,26 @@ img {
     margin-top: 1rem;
   }
 
-  img {
+  /* img {
     display: none;
+  } */
+
+  .trump-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .kanye-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .trump-img {
+    padding: 0.5rem;
+  }
+
+  .kanye-img {
+    padding: 0.5rem;
   }
 
   .score-container {
@@ -239,9 +263,9 @@ img {
     order: 1;
   }
 
-  .kanye-btn {
+  /* .kanye-btn {
     margin-top: 0.8rem;
-  }
+  } */
 }
 
 @media only screen and (max-width: 600px) {
