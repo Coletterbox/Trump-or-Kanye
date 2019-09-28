@@ -1,6 +1,8 @@
 :root {
-  --grey: #7f7f7f;
+  --grey0: #7f7f7f;
+  --grey: #c9c9c9;
   --taupe: #7a5964;
+  --light: #9699ad;
   --red: #4f1b18;
   --red2: #631616;
   --darkred: #420f0f;
@@ -22,7 +24,7 @@ body {
   text-align: center;
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
-  background-color: var(--taupe);
+  background-color: var(--light);
 }
 
 .header-container {
