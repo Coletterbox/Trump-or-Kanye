@@ -103,11 +103,21 @@ button:hover {
   height: 100%;
   width: 100%;
   display: none;
-  background-color: #fffeec;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
 }
 
-.kanye-img,
-.trump-img {
+.quiz-answer img {
+  display: none;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.kanye-img1,
+.trump-img1 {
   padding: 2rem;
   margin: auto;
   border: 0.2rem;
@@ -239,12 +249,18 @@ img {
     flex-direction: row;
   }
 
-  .trump-img {
+  .trump-img1 {
     padding: 0.5rem;
   }
 
+  .kanye-img1 {
+    padding: 0.5rem;
+  }
+
+  .trump-img,
   .kanye-img {
     padding: 0.5rem;
+    width: 50%;
   }
 
   .score-container {
