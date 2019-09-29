@@ -104,8 +104,8 @@ button:hover {
   width: 100%;
   display: none;
   background-color: inherit;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .quiz-answer img {
