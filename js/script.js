@@ -1,3 +1,12 @@
+// require("jsdom").env("", function(err, window) {
+//   if (err) {
+//     console.error(err);
+//     return;
+//   }
+//
+//   var $ = require("jquery")(window);
+// });
+
 // Trump script
 //
 var showQuote = document.querySelector(".show-quote");
@@ -61,6 +70,11 @@ var displayTrump = function() {
   xhr.open("GET", url, true);
   xhr.send();
 };
+
+// // band-aid fix
+// window.onload = function() {
+//   $(".quiz-answer").hide();
+// };
 
 // Kanye script
 //
