@@ -145,7 +145,7 @@ trumpButton.addEventListener("click", function() {
     apiGifCall(kanyeGiphyCall, kanyeImg);
     trumpImg.style.display = "none";
     kanyeImg.style.display = "block";
-    answerResult.innerText = "Wrong! You Ain't Got The Answers!";
+    answerResult.innerText = "Wrong! You ain't got the answers!";
   }
   attempts++;
   scoreTotal.innerHTML = score.toString() + "/" + attempts.toString();
@@ -158,13 +158,13 @@ kanyeButton.addEventListener("click", function() {
     apiGifCall(trumpGiphyCall, trumpImg);
     trumpImg.style.display = "block";
     kanyeImg.style.display = "none";
-    answerResult.innerText = "Wrong! Fake News!";
+    answerResult.innerText = "Wrong! Fake news!";
   } else {
     apiGifCall(kanyeGiphyCall, kanyeImg);
     trumpImg.style.display = "none";
     kanyeImg.style.display = "block";
     score++;
-    answerResult.innerText = "Correct! Yeezy as 1,2,3!";
+    answerResult.innerText = "Correct! Yeezy as 1, 2, 3!";
   }
   attempts++;
   displayQuote();
