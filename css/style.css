@@ -106,8 +106,8 @@ button:hover {
   background-color: #fffeec;
 }
 
-.kanye-img,
-.trump-img {
+.kanye-img1,
+.trump-img1 {
   padding: 2rem;
   margin: auto;
   border: 0.2rem;
@@ -239,11 +239,11 @@ img {
     flex-direction: row;
   }
 
-  .trump-img {
+  .trump-img1 {
     padding: 0.5rem;
   }
 
-  .kanye-img {
+  .kanye-img1 {
     padding: 0.5rem;
   }
 
