@@ -103,7 +103,17 @@ button:hover {
   height: 100%;
   width: 100%;
   display: none;
-  background-color: #fffeec;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+.quiz-answer img {
+  display: none;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 
 .kanye-img1,
@@ -245,6 +255,12 @@ img {
 
   .kanye-img1 {
     padding: 0.5rem;
+  }
+
+  .trump-img,
+  .kanye-img {
+    padding: 0.5rem;
+    width: 50%;
   }
 
   .score-container {
