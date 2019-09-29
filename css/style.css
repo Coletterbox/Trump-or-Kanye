@@ -15,6 +15,10 @@
   background-color: var(--taupe);
 } */
 
+* {
+  height: 100%;
+}
+
 body {
   display: grid;
   height: 100vh;
@@ -326,5 +330,21 @@ img {
 @media only screen and (max-width: 600px) {
   .score-skip-container {
     order: 3;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .score-skip-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .score-title {
+    display: none;
+  }
+  .score-container {
+    margin: 0.5rem;
+  }
+  .skip-btn {
+    margin: 0.5rem;
   }
 }
