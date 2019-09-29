@@ -15,6 +15,10 @@
   background-color: var(--taupe);
 } */
 
+* {
+  height: 100%;
+}
+
 body {
   display: grid;
   height: 100vh;
@@ -35,6 +39,13 @@ body {
   text-align: center;
   font-size: 3rem;
   margin-top: 2rem;
+}
+
+img {
+  border: none;
+  padding: none;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 header {
@@ -75,6 +86,11 @@ button:hover {
   margin-top: 2rem;
 }
 
+.trump-btn,
+.kanye-btn {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
 .skip-btn:hover,
 .next-btn:hover {
   background-color: var(--purple);
@@ -85,6 +101,10 @@ button:hover {
 .kanye-btn:hover {
   background-color: var(--red2);
   border: 4px solid var(--grey);
+}
+
+.answer-container {
+  padding: 0.2rem;
 }
 
 .quiz-container {
@@ -120,8 +140,8 @@ button:hover {
 .trump-img1 {
   padding: 2rem;
   margin: auto;
-  border: 0.2rem;
   border-radius: 50%;
+  border-style: none;
 }
 
 .show-quote {
@@ -132,6 +152,8 @@ button:hover {
   height: 10rem;
   border: solid 10px var(--blackish);
   background-color: var(--grey);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .score-skip-container {
@@ -149,6 +171,7 @@ button:hover {
   margin: 1rem 3rem 0rem;
   display: flex;
 }
+
 /*
 .response-container {
   width: 80%;
@@ -249,10 +272,7 @@ img {
     flex-direction: row;
   }
 
-  .trump-img1 {
-    padding: 0.5rem;
-  }
-
+  .trump-img1,
   .kanye-img1 {
     padding: 0.5rem;
   }
@@ -326,5 +346,21 @@ img {
 @media only screen and (max-width: 600px) {
   .score-skip-container {
     order: 3;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .score-skip-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .score-title {
+    display: none;
+  }
+  .score-container {
+    margin: 0.5rem;
+  }
+  .skip-btn {
+    margin: 0.5rem;
   }
 }
