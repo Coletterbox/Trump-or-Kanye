@@ -140,7 +140,7 @@ trumpButton.addEventListener("click", function() {
     apiGifCall(trumpGiphyCall, trumpImg);
     trumpImg.style.display = "block";
     kanyeImg.style.display = "none";
-    answerResult.innerText = "You're (alt) Right!";
+    answerResult.innerText = "You're (alt) right!";
   } else {
     apiGifCall(kanyeGiphyCall, kanyeImg);
     trumpImg.style.display = "none";
